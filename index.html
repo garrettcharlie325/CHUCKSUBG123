@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Awesome Game Hub</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #1a1a2e; color: white; text-align: center; }
+        .container { padding: 50px; }
+        .game-card { 
+            background: #16213e; border: 2px solid #0f3460; border-radius: 15px;
+            padding: 20px; margin: 10px; display: inline-block; width: 200px;
+            transition: transform 0.3s;
+        }
+        .game-card:hover { transform: scale(1.05); border-color: #e94560; }
+        button { 
+            background: #e94560; border: none; color: white; 
+            padding: 10px 20px; border-radius: 5px; cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Mini-Game Collection</h1>
+        <p>Choose a game to play!</p>
+        
+        <div class="game-card">
+            <h3>Space Explorer</h3>
+            <button onclick="alert('Launching Space Explorer...')">Play Now</button>
+        </div>
+
+        <div class="game-card">
+            <h3>Pixel Knight</h3>
+            <button onclick="alert('Loading Dungeon...')">Play Now</button>
+        </div>
+
+        <div class="game-card">
+            <h3>Brain Quiz</h3>
+            <button onclick="alert('Starting Quiz...')">Play Now</button>
+        </div>
+    </div>
+</body>
+</html>
