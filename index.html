@@ -3,40 +3,23 @@
 <head>
     <title>CHIRKS UNBLOCKED GAMES HUB</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0d1117; color: #c9d1d9; text-align: center; padding-top: 50px; }
+        body { font-family: sans-serif; background-color: #0d1117; color: #c9d1d9; text-align: center; padding-top: 50px; }
         .game-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px; }
-        .game-card { background: #161b22; border: 1px solid #30363d; padding: 25px; border-radius: 12px; width: 220px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        .btn { background: #238636; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; transition: 0.2s; }
-        .btn:hover { background: #2ea043; transform: scale(1.02); }
-        #score-display { font-size: 24px; color: #58a6ff; margin-bottom: 15px; font-weight: bold; }
-        h1 { color: #f0f6fc; font-size: 3rem; margin-bottom: 0; }
-        .subtitle { color: #8b949e; font-style: italic; margin-top: 5px; }
+        .game-card { background: #161b22; border: 1px solid #30363d; padding: 25px; border-radius: 12px; width: 220px; }
+        .btn { background: #238636; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; }
+        #score-display { font-size: 24px; color: #58a6ff; margin-bottom: 15px; }
     </style>
 </head>
 <body>
 
     <h1>CHIRKS UNBLOCKED GAMES HUB</h1>
-    <p class="subtitle">the ultimate spot for fun weee</p>
-    
-    <hr style="width: 60%; border: 0.5px solid #30363d; margin: 30px auto;">
+    <p>the ultimate spot for fun weee</p>
     
     <div class="game-container">
         <div class="game-card">
             <h3>Clicker Quest</h3>
             <div id="score-display">Clicks: 0</div>
             <button class="btn" onclick="addPoint()">TAP TO PLAY</button>
-        </div>
-
-        <div class="game-card">
-            <h3>Space Dodge</h3>
-            <p style="color: #484f58;">Coming Soon...</p>
-            <button class="btn" style="background: #21262d; cursor: not-allowed;">LOCKED</button>
-        </div>
-
-        <div class="game-card">
-            <h3>Mystery Game</h3>
-            <p style="color: #484f58;">Under Construction</p>
-            <button class="btn" style="background: #21262d; cursor: not-allowed;">LOCKED</button>
         </div>
     </div>
 
@@ -45,10 +28,9 @@
         function addPoint() {
             score = score + 1;
             document.getElementById("score-display").innerHTML = "Clicks: " + score;
-            
-            if (score === 10) { alert("Bronze Rank Reached!"); }
-            if (score === 100) { alert("CHIRKS ELITE STATUS!"); }
         }
     </script>
+    
+    <p style="margin-top: 50px; color: #444;">Site Version: 2.0 (Chirks Edition)</p>
 </body>
 </html>
